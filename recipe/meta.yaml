@@ -1,6 +1,6 @@
 {% set name = "lsstdesc-env" %}
 {% set date = datetime.datetime.utcnow().strftime('%Y.%m.%d') %}
-{% set build_number = 0 %}
+{% set build_number = 1 %}
 {% set version = date ~ '.' ~ build_number %}
 
 package:
@@ -14,7 +14,7 @@ build:
 requirements:
   run:
     - astroplan
-    - astropy
+    - astropy-base
     - bokeh
     - camb
     - cmake
